@@ -36,7 +36,7 @@
 	</div>
 	<div class="exoert_box cqfbDiv" style="display:none">
         <ul class="list">
-			<li></li>
+			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/cgbcn/1.jpg"></li>
 		</ul>
 	</div>
 	<div class="pgy">
@@ -111,8 +111,8 @@
 			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jifen1/6.2.jpg"></li>
 			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jifen1/q2.1.jpg"></li>
 			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jifen1/q2.2.jpg"></li>
-			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jifen1/b1.1.jpg"></li>
-			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jifen1/b1.2.jpg"></li>
+			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jifen1/b1-1.jpg"></li>
+			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jifen1/b1-2.jpg"></li>
 		</ul>
 	</div>
 	<div class="xinw">
@@ -194,6 +194,29 @@
 					// 显示
 					$(".cqfbDiv").show().addClass("show");
 					$(".cqfbSpan").text("收起↑");
+				}
+			});
+			$(".gbzhbSpan").click(function(e) {
+				if( $(".gbzhbDiv").hasClass("show") ){
+					// 执行隐藏
+					$(".gbzhbDiv").hide().removeClass("show");
+					$(".gbzhbSpan").text("展开↓");
+				}else{
+					// 显示
+					$(".gbzhbDiv").show().addClass("show");
+					$(".gbzhbSpan").text("收起↑");
+				}
+			});
+			
+			$(".cgbcnSpan").click(function(e) {
+				if( $(".cqfbDiv").hasClass("show") ){
+					// 执行隐藏
+					$(".cqfbDiv").hide().removeClass("show");
+					$(".cgbcnSpan").text("展开↓");
+				}else{
+					// 显示
+					$(".cqfbDiv").show().addClass("show");
+					$(".cgbcnSpan").text("收起↑");
 				}
 			});
 			$(".cunganbuSpan").click(function(e) {
