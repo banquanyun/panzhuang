@@ -58,14 +58,14 @@
 			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/cqfb1/6.jpg"></li>
 		</ul>
 	</div>
-	<div class="xinw">
-		<div class="xinwl">村干部分工<span class="cunganbuSpan" style="float: right;">展开↓</span></div>
+	<div class="szdsh">
+		<div class="xinwl">民生实事<span class="minshengSpan" style="float: right;">展开↓</span></div>
 	</div>
-	<div class="exoert_box cunganbuDiv" style="display:none">
-        <ul class="list">
-			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/cgbfg/1.jpg"></li>
+	<div class="exoert_box minshengDiv" style="display:none">
+		<ul class="list">
+			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/minsheng/1.jpg"></li>
 		</ul>
-    </div>
+	</div>
     <div class="pgy">
 		<div class="xinwl">财务公开<span class="xinwlSpan" style="float: right;">展开↓</span></div>
 	</div>
@@ -120,7 +120,7 @@
 	</div>
 	<div class="exoert_box pgyDiv" style="display:none">
 		<ul class="list">
-			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/dzbjb/1.jpg"></li>
+			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/dzbjb1/1.jpg"></li>
 		</ul>
 	</div>
 	</div>
@@ -146,11 +146,11 @@
 		</ul>
 	</div>
 	<div class="szdsh">
-		<div class="xinwl">民生实事<span class="minshengSpan" style="float: right;">展开↓</span></div>
+		<div class="xinwl">入党积极分子积分管理<span class="jjfzSpan" style="float: right;">展开↓</span></div>
 	</div>
 	<div class="exoert_box minshengDiv" style="display:none">
 		<ul class="list">
-			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/minsheng/1.jpg"></li>
+			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/jjfzjf/1.jpg"></li>
 		</ul>
 	</div>
 	
@@ -174,8 +174,6 @@
 					// 执行隐藏
 					$(".jibenDiv").hide().removeClass("show");
 					$(".jibenSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".jibenDiv").show().addClass("show");
@@ -188,8 +186,6 @@
 					// 执行隐藏
 					$(".cqfbDiv").hide().removeClass("show");
 					$(".cqfbSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".cqfbDiv").show().addClass("show");
@@ -224,8 +220,6 @@
 					// 执行隐藏
 					$(".cunganbuDiv").hide().removeClass("show");
 					$(".cunganbuSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".cunganbuDiv").show().addClass("show");
@@ -237,8 +231,6 @@
 					// 执行隐藏
 					$(".xinwlDiv").hide().removeClass("show");
 					$(".xinwlSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".xinwlDiv").show().addClass("show");
@@ -250,8 +242,6 @@
 					// 执行隐藏
 					$(".detextDiv").hide().removeClass("show");
 					$(".szdshSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".detextDiv").show().addClass("show");
@@ -263,8 +253,6 @@
 					// 执行隐藏
 					$(".bqdjDiv").hide().removeClass("show");
 					$(".bqdjSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".bqdjDiv").show().addClass("show");
@@ -276,8 +264,6 @@
 					// 执行隐藏
 					$(".pgyDiv").hide().removeClass("show");
 					$(".pgySpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".pgyDiv").show().addClass("show");
@@ -289,8 +275,6 @@
 					// 执行隐藏
 					$(".zbzyDiv").hide().removeClass("show");
 					$(".zbzySpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".zbzyDiv").show().addClass("show");
@@ -302,8 +286,6 @@
 					// 执行隐藏
 					$(".zhongdaDiv").hide().removeClass("show");
 					$(".zhongdaSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".zhongdaDiv").show().addClass("show");
@@ -315,12 +297,21 @@
 					// 执行隐藏
 					$(".minshengDiv").hide().removeClass("show");
 					$(".minshengSpan").text("展开↓");
-					
-					// 其他
 				}else{
 					// 显示
 					$(".minshengDiv").show().addClass("show");
 					$(".minshengSpan").text("收起↑");
+				}
+			});
+			$(".jjfzSpan").click(function(e) {
+				if( $(".minshengDiv").hasClass("show") ){
+					// 执行隐藏
+					$(".minshengDiv").hide().removeClass("show");
+					$(".jjfzSpan").text("展开↓");
+				}else{
+					// 显示
+					$(".minshengDiv").show().addClass("show");
+					$(".jjfzSpan").text("收起↑");
 				}
 			});
    		 });
