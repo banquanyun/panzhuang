@@ -34,7 +34,7 @@
 	<div class="xinw">
 		<div class="xinwl">村干部承诺<span class="cgbcnSpan" style="float: right;">展开↓</span></div>
 	</div>
-	<div class="exoert_box cqfbDiv" style="display:none">
+	<div class="exoert_box cgbcnDiv" style="display:none">
         <ul class="list">
 			<li><img src="https://cdn.jsdelivr.net/gh/banquanyun/panzhuang@master/themes/images/cgbcn/1.jpg"></li>
 		</ul>
@@ -205,13 +205,13 @@
 			});
 			
 			$(".cgbcnSpan").click(function(e) {
-				if( $(".cqfbDiv").hasClass("show") ){
+				if( $(".cgbcnDiv").hasClass("show") ){
 					// 执行隐藏
-					$(".cqfbDiv").hide().removeClass("show");
+					$(".cgbcnDiv").hide().removeClass("show");
 					$(".cgbcnSpan").text("展开↓");
 				}else{
 					// 显示
-					$(".cqfbDiv").show().addClass("show");
+					$(".cgbcnDiv").show().addClass("show");
 					$(".cgbcnSpan").text("收起↑");
 				}
 			});
